@@ -1,0 +1,89 @@
+Default Welcome Intent
+======================
+Text response:  Hello, How can I help you? You can say "New Order" or "Track Order"
+				Good day! What can I do for, you today? You can say "New Order" or "Track Order"
+				Greetings! How can I assist? You can say "New Order" or "Track Order"
+
+				
+Default Fallback Intent
+========================
+Text Response: I didn't understand. You can say 'New Order' or 'Track Order'. Also, in a new order, please mention only items from our available menu: Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa. Also specify a quantity for each item for example: "One pizza and 2 chole bhature"				
+
+
+Intent= new.order
+=================
+new order
+Place new order
+
+	Text Response = 
+		Ok, starting a new order. You can say things like "I want two pizzas and one mango juice". Make sure to specify a quantity for every food item! Also, we have only the following items on our menu: Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa.
+
+		
+
+Intent= order.add - context: ongoing-order
+==========================================
+Costumer: Give me 2 plates of fried chicken and waffles, one cheeseburger.
+Customer: I'd like to order two plates of fried chicken and waffles, one cheeseburger, and 3 milkshakes, please.
+Customer: Can you please get me two servings of fried chicken and waffles, one cheeseburger, and one milkshake?
+Customer: Please prepare 2 portions of fried chicken and waffles, along with one cheeseburger and 1 milkshake for me.
+Customer: 3 hot dogs, 2 milkshakes, 1 grilled cheese sandwich.
+Customer: Can I get 2 plates of fried chicken and waffles, along with one cheeseburger and 1 milkshake?
+Customer: I'll take 2 orders of fried chicken and waffles, one cheeseburger, and 1 milkshake, if you don’t mind.
+Customer: I want 1 milkshake, 2 fried chicken and waffles, and one burger, do it fast plz.
+Customer: In addition, add 1 grilled cheese sandwich and 2 cheeseburgers.
+Customer: Moreover, include 2 milkshakes.
+Customer: Also, please give me 2 milkshakes.
+Customer: Additionally, I'd like 2 milkshakes.
+Customer: 2 cheeseburgers, and ok, let’s add one hot dog too.
+Customer: 3 hot dogs…
+ 
+
+Intent= order.complete - context: ongoing-order
+==========================================
+Nope
+That's all I needed
+Done ordering it
+Place an order
+Done
+That's it
+
+Intent= order.remove - context: ongoing-order
+==========================================
+No fried chicken and fries in my order. please remove.
+Kindly take hot dog and milkshake off the order, please.
+I'd like to exclude pizza and hamburger, please
+I no longer want the milkshake in my order, please remove it
+Kindly exclude the fries from my order
+I would like to remove the pizza from my order
+Please take the pizza off my order
+delete fries from my order
+hey, plz get rid of fries and pizza
+I don't want fries
+remove pizza from my order
+can you remove milkshake?
+
+Intent= track.order
+===================
+
+check the status of my order
+track order
+track existing order
+
+Text response:
+	Definitely. What is your order id?
+	Sure. Please enter your order id.
+	Definitely. What is your order id?
+
+
+Intent= track.order - context: ongoing-tracking
+==================================================
+how about 32
+how about 40?
+here it is - 63321
+here you go: 123
+here is my order number 675
+id is 453
+here is my order id # 341
+7890
+123
+345
