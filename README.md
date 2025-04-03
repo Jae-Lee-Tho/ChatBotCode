@@ -4,7 +4,7 @@ This project is an end-to-end implementation of a food delivery chatbot using **
 
 ## Overview
 
-In this project, we build a smart chatbot that can interact with users to help them place food orders, check order status, and get delivery information. The system uses Dialogflow to handle natural language understanding, with a Python backend (using FastAPI) that connects to a MySQL database for managing orders and menu data.
+In this project, I build a smart chatbot that can interact with users to help them place food orders, check order status, and get delivery information. The system uses Dialogflow to handle natural language understanding, with a Python backend (using FastAPI) that connects to a MySQL database for managing orders and menu data.
 
 ## What You'll Learn
 
